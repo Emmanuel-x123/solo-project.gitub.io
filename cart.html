@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <!--******* swiper-css ***********-->
+           <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />   
+           <!--******* css ***********-->
+      <link rel="stylesheet" href="/store.css">
+          <!--******* icon- ***********-->
+      <script src="https://kit.fontawesome.com/37fb0164a8.js" crossorigin="anonymous"></script>  
+    <title>Document</title>
+</head>
+<body>
+      <!--******* HEADER **********-->
+      <header class="header">
+        <div class="header_top">
+            <div class="header-container container">
+             <div class="header-contact">
+                <span>+2349-0357-99404</span>
+                
+                <span>our location</span>
+             </div> 
+           <p class="header-alrt-nws">
+            great deals - save more with coupons
+           </p>
+           <a href="/signup.html" class="header-top-action">
+            log in / sign up
+           </a>    
+            </div>
+        </div>
+      <nav class="nav-container">
+        <a href="/medic.html" class="nav-logo">
+            <span><em>FastMedic</em></span>
+        </a>
+        <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="/store.html" class="nav-link">home</a>
+            </li>
+            <li class="nav-item">
+                <a href="/index.html" class="nav-link">shop</a>
+            </li>
+            <li class="nav-item">
+                <a href="/account.html" class="nav-link">my account</a>
+            </li>  
+            <li class="nav-item">
+                <a href="/storelog.html" class="nav-link">log in</a>
+            </li>                 
+        </ul>  
+        <div class="header-search">
+            <input type="text" placeholder="search for items..." class="form-input">
+            <button class="search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>  
+        </div>
+    
+        <div class="header-user-action">
+            <a href="/wishlist.html" class="header-action-btn">
+            <span><i class="fa-regular fa-heart"></i></span>
+            <span class="count">3</span>
+            </a>
+            <a href="" class="header-action-btn">
+                <span><i class="fa-brands fa-opencart"></i></span>
+                <span class="counts">0</span>
+                </a>       
+        </div>
+      </nav>  
+    </header>
+      <!--******* HEADER **********-->
+  <div class="main">
+   <!--******* BREADCRUMBS **********-->
+   <section class="breadcrumb">
+    <ul class="breadcrumb-list flex container">
+        <li><a href="/store.html" class="brdcrumb-link">home</a></li>
+        <li><span class="brdcrumb-link">></span></li>
+        <li><span class="brdcrumb-link">shop</span></li>
+        <li><span class="brdcrumb-link">></span></li>
+        <li><span class="brdcrumb-link">cart</span></li>
+    </ul>
+  </section> 
+  
+    <!--******* CART **********--> 
+<!-- <section class="cart section-lg container">
+    <div class="table-container" id="caart">
+        <table class="table">
+            <tr>
+             <th>image</th>
+             <th>name</th>
+             <th>price</th>
+             <th>quantity</th>
+             <th>subtotal</th>
+             <th>remove</th>   
+            </tr>
+
+            <tr>
+              <td><img src="/img/prdct2.jpg" alt="" class="table-img"></td>  
+
+              <td><h3 class="table-title">antiseptic liquid</h3>
+                <p class="table-desc">its powerful formula kills 99.9% of bacteria.</p>
+            </td>
+
+            <td><span class="table-price">$100</span></td>
+
+            <td><input type="number" value="3" class="quantity"></td>
+          
+            <td><span class="table-subtotal">$200</span></td>
+
+            <td><i class="fa-regular fa-trash-can table-trash"></i></td>
+            </tr>
+
+
+            <tr>
+                <td><img src="/img/prdct4.jpg" alt="" class="table-img"></td>  
+  
+                <td><h3 class="table-title">aloe vera</h3>
+                  <p class="table-desc">reduces redness and inflammation</p>
+              </td>
+  
+              <td><span class="table-price">$100</span></td>
+  
+              <td><input type="number" value="3" class="quantity"></td>
+            
+              <td><span class="table-subtotal">$200</span></td>
+  
+              <td><i class="fa-regular fa-trash-can table-trash"></i></td>
+             </tr> 
+             
+         <tr>
+                <td><img src="/img/prdct7.jpg" alt="" class="table-img"></td>  
+  
+                <td><h3 class="table-title">vitamin</h3>
+            <p class="table-desc">vitamind3 + k2 essential for blood clotting and bone health</p>
+              </td>
+  
+              <td><span class="table-price">$100</span></td>
+  
+              <td><input type="number" value="3" class="quantity"></td>
+            
+              <td><span class="table-subtotal">$200</span></td>
+  
+              <td><i class="fa-regular fa-trash-can table-trash"></i></td>
+            </tr>              
+        </table>
+    </div>
+
+    <div class="cart-action">
+        <a href="" class="btn flex btn-md">
+        <i class="fa-solid fa-shuffle"></i> update cart
+        </a>
+
+        <a href="" class="btn flex btn-md">
+            <i class="fa-solid fa-bag-shopping"></i> continue shopping
+            </a>
+    </div>
+
+    <div class="divider">
+    <i class="fa-solid fa-fingerprint"></i>    
+    </div>
+
+    <div class="cart-group grid">
+   <div>
+    <div class="cart-shipping">
+        <h3 class="section-title">calculate shipping</h3>
+
+        <form action="" class="form grid">
+            <input type="text" placeholder="state / country" class="form-input">
+
+            <div class="form-group grid">
+            <input type="text" placeholder="city" class="form-input">
+
+            <input type="text" placeholder="postcode / zip" class="form-input">
+            </div>
+
+            <div class="form-btn">
+                <button class="btn flex btn-sm">
+                <i class="fa-solid fa-shuffle"></i> update     
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <div class="cart-coupon">
+        <h3 class="section-title">apply coupon </h3>
+
+        <form action="" class="coupon-form form grid">
+            <div class="form-group grid">
+         <input type="text" class="form-input" placeholder="enter your coupon">
+
+         <div class="form-btn">
+            <button class="btn flex btn-sm">
+                <i class="fa-solid fa-tag"></i> apply    
+            </button>
+            </div>
+         </div>
+        </form>
+    </div>
+   </div>
+
+   <div class="cart-total">
+    <h3 class="section-title">cart totals</h3>
+
+    <table class="cart-total-table">
+        <tr>
+    <td><span class="cart-total-title">cart subtotal</span></td>
+    <td><span class="cart-total-price">$200,00</span></td>
+        </tr>
+
+        <tr>
+     <td><span class="cart-total-title">shipping</span></td>
+    <td><span class="cart-total-price">$10.00</span></td>
+          </tr>
+
+        <tr>
+        <td><span class="cart-total-title">total</span></td>
+        <td><span class="cart-total-price">$210,00</span></td>
+         </tr>
+    </table>
+
+    <a href="/checkout.html" class="btn flex btn-md">proceed to checkout</a>
+   </div>
+    </div>
+</section> -->
+<div class="cart_page">
+  <div class="shopping-cart" id="shopping_cart"></div>
+  <div class="label" id="label"></div>
+</div>
+   <!--******* NEWSLETTER **********-->
+   <section class="newsletter section">
+    <div class="newsletter-container container grid">
+      <h3 class="newsletter-title flex">
+        <i class="fa-regular fa-envelope"></i>
+        sign up to our newsletters
+      </h3>
+  
+      <p class="newsletter-desc">
+        ...and recieve $20 coupon for first shopping
+      </p>
+  
+      <form action="" class="newsletter-form">
+        <input type="email" placeholder="enter your email" class="newsletter-input">
+  
+        <button type="submit" class="newsletter-btn">subscribe</button>
+      </form>
+    </div>
+  </section>    
+  </div> 
+  
+    <!--******* FOOTER **********-->  
+    <footer>
+        <div class="footer-container">
+      
+      <!-- company-box -->
+      <div class="footer-com-box">
+        <!-- logo -->
+        <a href="#" class="footer-logo"><em>FastMedic</em></a>
+        <!-- details -->
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur fugit facere, amet deserunt odit minima sed fuga commodi cu</p>
+        <!-- social-box -->
+        <div class="footer-social">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+       </div> <!--  compant-box-end -->
+      
+       <!-- links -->
+       <div class="footer-link-box">
+      <strong>main link's</strong>
+      <ul>
+        <li><a href="#">home</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">contact</a></li>
+        <li><a href="#">services</a></li>
+        <li><a href="#">portfolio</a></li>
+      </ul>
+       </div>
+      
+        <!-- links -->
+        <div class="footer-link-box">
+          <strong>main link's</strong>
+          <ul>
+            <li><a href="#">sign in</a></li>
+            <li><a href="#">view cart</a></li>
+            <li><a href="#">my wishlist</a></li>
+            <li><a href="#">services</a></li>
+            <li><a href="#">help</a></li>
+          </ul>
+           </div>
+      
+          <!-- links -->
+       <div class="footer-link-box">
+        <strong>main link's</strong>
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">contact</a></li>
+          <li><a href="#">services</a></li>
+          <li><a href="#">portfolio</a></li>
+        </ul>
+         </div>              
+        </div>
+        <!-- botton -->
+      <div class="footer-bottom">
+        <span>ots solo project</span>
+        <span>copyright 2024-emmanuel cohort-16</span>
+      </div>
+      
+    </footer>
+
+
+
+
+
+
+          <!--************** main js -->
+    <script src="/js/data.js"></script>
+    <script src="/js/cart.js"></script>
+    <!-- <script src="/js/store.js"></script> -->
+
+    <!--************** swiper js -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
+</body>
+</html>

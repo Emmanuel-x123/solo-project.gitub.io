@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/admin.css">
+    <script src="https://kit.fontawesome.com/37fb0164a8.js" crossorigin="anonymous"></script>    
+    <title>Admin-dashboard</title>
+</head>
+<body class="">
+    <!-- SIDEBAR STARTS HERE -->
+     <div class="sidebar">
+        <a href="" class="logo">
+            <em>FastMedic</em>  
+        </a>
+
+        <ul class="side-menu">
+    <li class="active"><a href="#"><i class="fa-solid fa-table-cells-large icn"></i>dashboard</a> </li>
+    <li> <a href="#"><i class="fa-solid fa-video icn"></i>content</a></li>
+    <li> <a href="#"><i class="fa-solid fa-chart-simple icn"></i>analytics</a> </li>
+    <li> <a href="#"><i class="fa-solid fa-message icn"></i>comments</a> </li>
+    <li> <a href="#"><i class="fa-brands fa-intercom icn"></i>customize</a> </li>
+    <li> <a href="#"><i class="fa-regular fa-user icn"></i>users</a> </li>
+    <li> <a href="#"><i class="fa-solid fa-gear icn"></i>settings</a> </li>
+        </ul>
+
+        <div class="side-menu">
+            <ul>
+        <li><a href="#" ><i class="fa-solid fa-moon icn"></i>dark / light</a></li>
+        <li><a href="#" class="logout"><i class="fa-solid fa-arrow-right-from-bracket icn"></i>logout</a></li>
+            </ul>
+        </div>
+     </div>
+<!-- sidebar closed -->
+
+<!-- content starts -->
+
+<div class="content">
+    <nav>
+        <i class="fa-solid fa-bars mnu"></i>
+        <form action="#">
+            <div class="form-input">
+                <input type="search" placeholder="search...........">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass srch"></i></button>         
+            </div>
+        </form>
+
+        <a href="#" class="notification">
+            <i class="fa-regular fa-bell"></i>
+            <span>12</span>
+        </a>
+
+        <a href="#" class="profile">
+            <img src="/img/chidex.jpg" alt="">
+        </a>
+    </nav>
+
+    <!-- main start -->
+     <main>
+        <div class="header">
+            <h1>dashboard</h1>
+
+            <ul class="breadcrum">
+                <li><a href="#" class="active">analytics</a></li>
+                /
+                <li><a href="#">content</a></li>
+            </ul>
+        </div>
+
+
+        <!-- card start -->
+         <ul class="card">
+         <li>
+        <i class="fa-solid fa-user-group cds"></i>
+       <span class="info">
+        <h3>7,373</h3>
+        <p>new users</p>
+       </span>
+         </li>
+
+         <li>
+            <i class="fa-brands fa-opencart cds"></i>
+           <span class="info">
+            <h3>9,373</h3>
+            <p>total orders</p>
+           </span>
+             </li>     
+             
+             <li>
+                <i class="fa-solid fa-chart-line cds"></i>
+               <span class="info">
+                <h3>5,373</h3>
+                <p>sites visit</p>
+               </span>
+                 </li>  
+                 
+                 <li>
+                    <i class="fa-solid fa-circle-dollar-to-slot cds"></i>
+                   <span class="info">
+                    <h3>$6,373</h3>
+                    <p>this month</p>
+                   </span>
+                     </li>                 
+
+         </ul>
+         <!-- card close -->
+
+         <!-- bottom data start -->
+          <div class="bottom-data">
+            <div class="orders">
+                <div class="header">
+                    <h3>recent orders</h3>
+                </div>
+
+                <table>
+                    <thead>
+                    <tr>
+                   <th>id</th>
+                   <th>name</th>
+                   <th>email</th>
+                   <th>date</th>
+                   <th>status</th>         
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                       <td>12343</td>
+                       <td class="img_content">
+                        <img src="/img/review1.jpg" alt="">
+                        <p>jenny luis</p>
+                       </td> 
+                       <td>esongz456@gmail.com</td>
+                       <td>3rd july 2024</td>  
+                    <td><span class="status completed">completed</span></td>  
+                        </tr>
+                        <tr>
+                      <td>12343</td>
+                        <td class="img_content">
+                         <img src="/img/review2.jpg" alt="">
+                         <p>joy helen</p>
+                        </td> 
+                        <td>esongz456@gmail.com</td>
+                        <td>3rd july 2024</td>  
+                     <td><span class="status pending">pending</span></td>  
+                         </tr> 
+                         <tr>
+                         <td>12343</td>
+                         <td class="img_content">
+                          <img src="/img/review3.jpg" alt="">
+                          <p>john doe</p>
+                         </td> 
+                         <td>esongz456@gmail.com</td>
+                         <td>3rd july 2024</td>  
+                      <td><span class="status pending">pending</span></td>  
+                          </tr>  
+                          
+                          <tr>
+                            <td>12343</td>
+                            <td class="img_content">
+                             <img src="/img/review1.jpg" alt="">
+                             <p>jenny luis</p>
+                            </td> 
+                            <td>esongz456@gmail.com</td>
+                            <td>3rd july 2024</td>  
+                         <td><span class="status completed">completed</span></td>  
+                             </tr>  
+                             
+                             
+                             <tr>
+                                <td>12343</td>
+                                <td class="img_content">
+                                 <img src="/img/review3.jpg" alt="">
+                                 <p>john doe</p>
+                                </td> 
+                                <td>esongz456@gmail.com</td>
+                                <td>3rd july 2024</td>  
+                             <td><span class="status processing">pending</span></td>  
+                                 </tr>                            
+                    </tbody>
+                </table>
+            </div>
+ <!-- reminders-->
+            <div class="reminders">
+                <div class="header">
+                    <h3>reminders</h3>
+                </div>
+
+                <ul class="task-list">
+                    <li class="completed">
+                        <div class="task-title">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>start our meeting</p>     
+                        </div>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </li>
+
+                    <li class="completed">
+                        <div class="task-title">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>analysis our site</p>     
+                        </div>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </li>
+                    
+                    <li class="uncompleted">
+                        <div class="task-title">
+                        <i class="fa-regular fa-circle-xmark"></i>
+                    <p>study the charts</p>     
+                        </div>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </li>       
+                </ul>
+            </div>
+          </div>
+         <!-- bottom data close -->     
+     </main>
+     <!-- main end -->
+
+
+
+     <script src="/admin.js"></script>
+</div>
+</body>
+</html>

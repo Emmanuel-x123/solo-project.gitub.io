@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--******* swiper-css ***********-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />   
+     <!--******* css ***********-->
+     <link rel="stylesheet" href="/store.css">
+     <!--******* icon- ***********-->
+     <script src="https://kit.fontawesome.com/37fb0164a8.js" crossorigin="anonymous"></script>    
+    <title>Document</title>
+</head>
+<body>
+     <!--******* HEADER **********-->
+     <header class="header">
+        <div class="header_top">
+            <div class="header-container container">
+             <div class="header-contact">
+                <span>+2349-0357-99404</span>
+                
+                <span>our location</span>
+             </div> 
+           <p class="header-alrt-nws">
+            great deals - save more with coupons
+           </p>
+           <a href="/signup.html" class="header-top-action">
+            log in / sign up
+           </a>    
+            </div>
+        </div>
+      <nav class="nav-container">
+        <a href="/medic.html" class="nav-logo">
+            <span><em>FastMedic</em></span>
+        </a>
+        <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="/store.html" class="nav-link">home</a>
+            </li>
+            <li class="nav-item">
+                <a href="/shop.html" class="nav-link">shop</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link active-link">my account</a>
+            </li>  
+            <li class="nav-item">
+                <a href="/storelog.html" class="nav-link">log in</a>
+            </li>                 
+        </ul>  
+        <div class="header-search">
+            <input type="text" placeholder="search for items..." class="form-input">
+            <button class="search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>  
+        </div>
+    
+        <div class="header-user-action">
+            <a href="/wishlist.html" class="header-action-btn">
+            <span><i class="fa-regular fa-heart"></i></span>
+            <span class="count">3</span>
+            </a>
+            <a href="/cart.html" class="header-action-btn">
+                <span><i class="fa-brands fa-opencart"></i></span>
+                <span class="count">3</span>
+                </a>       
+        </div>
+      </nav>  
+    </header> 
+     <!--******* MAIN **********-->
+ <div class="main">
+   <!--******* BREADCRUMBS **********-->
+   <section class="breadcrumb">
+    <ul class="breadcrumb-list flex container">
+        <li><a href="/store.html" class="brdcrumb-link">home</a></li>
+        <li><span class="brdcrumb-link">></span></li>
+        <li><span class="brdcrumb-link">account</span></li>           
+    </ul>
+  </section>   
+
+   <!--******* ACCOUNT **********-->
+<section class="account section-lg">
+<div class="accounts-container container grid">
+    <div class="account-tabs">
+        <p class="account-tab active-tab" data-target="#dashboard">
+            <i class="fa-solid fa-sliders"></i> dashboard
+        </p>
+
+        <p class="account-tab" data-target="#orders">
+         <i class="fa-solid fa-basket-shopping"></i>orders
+        </p>  
+        
+     <p class="account-tab" data-target="#update-profile">
+        <i class="fa-regular fa-user"></i> update profile
+     </p>  
+     
+     <p class="account-tab" data-target="#update-profile">
+        <i class="fa-regular fa-user"></i> my account
+     </p>   
+     
+     <p class="account-tab" data-target="#address">
+        <i class="fa-regular fa-user"></i> my addresss
+     </p> 
+
+     <p class="account-tab" data-target="#change-password">
+        <i class="fa-regular fa-user"></i> change password
+     </p>
+
+
+     <p class="account-tab">
+        <i class="fa-regular fa-circle-xmark"></i> logout
+     </p>
+    </div>
+
+    <div class="tabs-content">
+    <div class="tab-content active-tab" content id="dashboard">
+    <h3 class="tab-header">hello chidex</h3>  
+    
+    <div class="tab-body">
+        <p class="tab-desc">
+            from your account dashboard. you can easily check & view
+            your recent orders, manage your shipping and billing addresses 
+            and edit your password and account details.
+        </p>
+    </div>
+    </div>
+    
+    <div class="tab-content" content id="orders">
+        <h3 class="tab-header">your orders</h3>
+
+        <div class="tab-body">
+        <table class="placed-order-table">
+            <tr>
+              <th>order</th> 
+              <th>date</th> 
+              <th>status</th>
+              <th>total</th>
+              <th>actions</th>
+            </tr>
+
+            <tr>
+            <td>#1357</td>
+            <td>may 31, 2024</td>
+            <td>completed</td>
+            <td>$125.00</td>
+            <td><a href="#" class="view-orders">view</a></td>
+            </tr>
+
+            <tr>
+                <td>#1357</td>
+                <td>may 31, 2024</td>
+                <td>processing</td>
+                <td>$250.00</td>
+                <td><a href="#" class="view-orders">view</a></td>
+                </tr>
+
+            <tr>
+             <td>#1357</td>
+             <td>may 30, 2024</td>
+              <td>completed</td>
+              <td>$200.00</td>
+              <td><a href="#" class="view-orders">view</a></td>
+             </tr>               
+        </table>
+        </div>
+    </div>
+
+    <div class="tab-content" content id="update-profile">
+        <h3 class="tab-header">update profile</h3>
+
+        <div class="tab-body">
+            <form action="" class="form grid">
+             <input type="text" placeholder="username" class="form-input">
+             
+             <div class="form-btn">
+                <button class="btn btn-md">save</button>
+             </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="tab-content" content id="address">
+        <h3 class="tab-header">shipping address</h3>
+
+        <div class="tab-body">
+        <address class="address">
+         rd 14 peace <br> estate house 3,<br> baruwa.   
+        </address> 
+        <p class="city">lagos</p> 
+        <a href="" class="edit">edit</a>  
+        </div>
+    </div>
+
+    <div class="tab-content" content id="change-password">
+        <h3 class="tab-header">change password</h3>
+
+        <div class="tab-body">
+            <form action="" class="form grid">
+             <input type="password" placeholder="current password" class="form-input">
+
+             <input type="password" placeholder="new password" class="form-input">
+             
+             <input type="password" placeholder="confirm password" class="form-input">
+
+             <div class="form-btn">
+                <button class="btn btn-md">save</button>
+             </div>
+            </form>
+        </div>
+    </div>
+    </div>
+</div>
+</section>
+
+    <!--******* NEWSLETTER **********-->
+    <section class="newsletter section ">
+        <div class="newsletter-container container grid">
+          <h3 class="newsletter-title flex">
+            <i class="fa-regular fa-envelope"></i>
+            sign up to our newsletters
+          </h3>
+      
+          <p class="newsletter-desc">
+            ...and recieve $20 coupon for first shopping
+          </p>
+      
+          <form action="" class="newsletter-form">
+            <input type="email" placeholder="enter your email" class="newsletter-input">
+      
+            <button type="submit" class="newsletter-btn">subscribe</button>
+          </form>
+        </div>
+      </section>  
+ </div>    
+          <!--******* FOOTER **********-->  
+          <footer>
+            <div class="footer-container">
+          
+          <!-- company-box -->
+          <div class="footer-com-box">
+            <!-- logo -->
+            <a href="#" class="footer-logo"><em>FastMedic</em></a>
+            <!-- details -->
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur fugit facere, amet deserunt odit minima sed fuga commodi cu</p>
+            <!-- social-box -->
+            <div class="footer-social">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+           </div> <!--  compant-box-end -->
+          
+           <!-- links -->
+           <div class="footer-link-box">
+          <strong>main link's</strong>
+          <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">services</a></li>
+            <li><a href="#">portfolio</a></li>
+          </ul>
+           </div>
+          
+            <!-- links -->
+            <div class="footer-link-box">
+              <strong>main link's</strong>
+              <ul>
+                <li><a href="#">sign in</a></li>
+                <li><a href="#">view cart</a></li>
+                <li><a href="#">my wishlist</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">help</a></li>
+              </ul>
+               </div>
+          
+              <!-- links -->
+           <div class="footer-link-box">
+            <strong>main link's</strong>
+            <ul>
+              <li><a href="#">home</a></li>
+              <li><a href="#">about</a></li>
+              <li><a href="#">contact</a></li>
+              <li><a href="#">services</a></li>
+              <li><a href="#">portfolio</a></li>
+            </ul>
+             </div>              
+            </div>
+            <!-- botton -->
+          <div class="footer-bottom">
+            <span>ots solo project</span>
+            <span>copyright 2024-emmanuel cohort-16</span>
+          </div>
+          
+        </footer>
+        
+    
+        
+    
+    
+     <!--************** main js -->
+     <script src="/medic.js"></script>
+    
+     <!--************** swiper js -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+</html>
