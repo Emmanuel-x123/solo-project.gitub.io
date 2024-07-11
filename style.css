@@ -1383,20 +1383,19 @@
      }
    } 
    
-   @media screen and (max-width: 352px) {
+   @media screen and (max-width: 360px) {
      .do-you-know-main{
        max-width: 352px;
        overflow: hidden; 
      background-position: center;  
      background-repeat: no-repeat;
      background-size: cover;
-     height: 100vh;
      background-attachment: scroll;
      position: relative;
          }  
-     .dyk-heading{
+   .dyk-heading{
        position: absolute;
-       left: 20px;
+       left: 40px;
        font-size: 0.675rem !important;
       }
          
@@ -1404,7 +1403,7 @@
       position: absolute;
       font-size: 0.510rem !important;
       width:100px;
-      left: 10px; 
+      left: 25px; 
       top: 40px;
      line-height: 10px !important;
        }
