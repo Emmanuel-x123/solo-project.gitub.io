@@ -486,6 +486,11 @@ main .bottom-data .reminders .task-list li .task-title p{
         display: none;  
     }
 
+    .content main .bottom-data > div {
+        overflow-x: auto; /* or overflow-x: scroll */
+        white-space: nowrap; /* to prevent text wrapping */
+      }
+
     .content nav form .form-input button{
         background-color: var(--dark-grey);
     }
