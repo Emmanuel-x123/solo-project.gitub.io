@@ -1317,7 +1317,7 @@
      .do-you-know-main{
        max-width: 100%;
        overflow: hidden; 
-      background-image: url(/img/lets\ chat.jpg);
+      background-image: url(img/lets\ chat.jpg);
      background-position: center;  
      background-repeat: no-repeat;
      background-size: cover;
