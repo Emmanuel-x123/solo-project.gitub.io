@@ -270,9 +270,170 @@
    }
    
    /* do you know styling */
+
+   .do-you-know-main {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.dyk-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #2c3e50;
+    position: relative;
+    font-weight: 600;
+}
+
+.dyk-heading:after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #3498db;
+    margin: 1rem auto 0;
+    border-radius: 2px;
+}
+
+.do-you-know {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    align-items: center;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    padding: 3rem;
+}
+
+.do-u-knw-img {
+    flex: 1;
+    min-width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.dyk-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.do-u-knw-img:hover .dyk-img {
+    transform: scale(1.03);
+}
+
+.dyk-desc {
+    flex: 1;
+    min-width: 300px;
+}
+
+.p-desc {
+    font-size: 1.4rem;
+    color: #3498db;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.p-desc em {
+    font-style: normal;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+.features-list {
+    padding-left: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.features-list li {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: #34495e;
+    position: relative;
+    padding-left: 2rem;
+    line-height: 1.6;
+}
+
+.features-list i {
+    color: #3498db;
+    margin-right: 0.8rem;
+    position: absolute;
+    left: 0;
+    top: 0.2rem;
+}
+
+.dyk-btn-container {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.dyk-btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-align: center;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.login-btn {
+    background: #fff;
+    color: #3498db;
+    border: 2px solid #3498db;
+}
+
+.login-btn:hover {
+    background: #3498db;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+}
+
+.signup-btn {
+    background: #3498db;
+    color: #fff;
+    border: 2px solid #3498db;
+}
+
+.signup-btn:hover {
+    background: #2980b9;
+    border-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+}
+
+@media (max-width: 768px) {
+    .do-you-know {
+        padding: 2rem;
+    }
+    
+    .dyk-heading {
+        font-size: 2rem;
+    }
+    
+    .p-desc {
+        font-size: 1.2rem;
+    }
+    
+    .features-list li {
+        font-size: 1rem;
+    }
+    
+    .dyk-btn {
+        padding: 0.7rem 1.5rem;
+    }
+}
    
-   .do-you-know-main{
-       /* max-width: 1000px; */
+   /* .do-you-know-main{
        width: 100%;
        background-color: #f3a6201e;
        padding:20px;
@@ -287,15 +448,9 @@
    }
    
    .do-you-know{
-     /* display: grid;
-     grid-template-columns: 1fr 1fr  80px;
-     grid-gap: 10px;
-     width: 90%; */
      display: flex;
      justify-content: space-evenly;
      align-items: center;
-     /* width: 100%; */
-   
    }
    
    .do-you-know ol{
@@ -351,7 +506,7 @@
        background-color: #ddd;
        color: var(--content-color) !important;
        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-   }
+   } */
    
    
    /* about us begings here*********** */
@@ -1190,31 +1345,7 @@
    .menu-btn:checked ~ .menu{
      display: block;
    }
-   .do-you-know-main{
-   align-items: center;
-   
-   }
-   .dyk{
-     width: 70%;
-     margin-left: 100px;
-   }
-   .do-you-know{
-     display: grid;
-     grid-template-columns: 1fr;
-   }
-   .dyk-desc p{
-     text-align: center;
-   }
-   .dyk-desc ol{
-     margin-left: 300px;
-   }
-   .dyk-desc li{
-   list-style: circle;
-   }
-   
-   .dyk-btn-main{
-     margin-left: 300px;
-   }
+  
    #why-choose-us{
      grid-template-columns: 1fr;
    }
@@ -1274,214 +1405,8 @@
      }
    }
    
-   /******* for small devices */
-   @media(max-width: 576px) {
-   
-     .do-you-know-main{
-     max-width: 100%;
-     overflow: hidden;
-    background-image: url(/img/lets\ chat.jpg);
-   background-position: center;  
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-attachment: scroll;
-   position: relative;
-       }
-      
-    .dyk-heading{
-     position: absolute;
-     left: 120px;
-     color: var(--first-color-alt) !important;
-     font-size: 0.675rem !important;
-    }   
-   
-       .dyk{
-     /* display: none; */
-       }
-       .do-you-know{
-      
-      
-       }
-       .p-desc{
-     position: absolute;
-     font-size: 0.574rem !important;
-    width:95px;
-    left: 110px; 
-    top: 40px;
-    line-height: 10px !important;
-       }
-       .dyk-desc ol li{
-    position: relative;
-      font-size: 0.574rem;
-      top: 40px;
-      left: -200px;
-      width: 90px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-       }
-       .dyk-desc li{
-       list-style: circle;
-       }
-       
-       .dyk-btn-main{
-   display: flex;
-   flex-direction:row;
-       }
-   .dyk-btn{
-     width: 100%;
-     padding-bottom: 8px;
-   }
-   
-   .dyk-btn:hover a{
-     background-color: #ddd;
-     color: black;
-   }
-   }
-   
-   @media (max-width: 513px){
-     .do-you-know-main{
-       max-width: 100%;
-       overflow: hidden; 
-      background-image: url(/img/lets\ chat.jpg);
-     background-position: center;  
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-attachment: scroll;
-     position: relative;
-         } 
-        
-      .dyk-heading{
-       position: absolute;
-       left: 100px;
-       font-size: 0.675rem !important;
-      }   
-     
-         .dyk{
-       display: none;
-         }
-       
-         .p-desc{
-       position: absolute;
-       font-size: 0.574rem !important;
-      width:95px;
-      left: 90px; 
-      top: 40px;
-      line-height: 10px !important;
-         }
-         .dyk-desc ol li{
-      position: relative;
-        font-size: 0.574rem;
-        top: 30px;
-        left: -130%;
-        width: 90px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-         }
-         .dyk-desc li{
-         list-style: circle;
-         }
-         
-         .dyk-btn-main{
-     display: flex;
-     flex-direction:row;
-         }
-     .dyk-btn{
-       height: 45px;
-       padding: 0px 0px;
-       background-color: var(--first-color);
-       color: #ffffff;
-       border-radius: 4px;
-       margin-right: 10px;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       font-size: 0.9rem;
-       letter-spacing: 0.5px;
-       font-weight: 500;
-       width: 100%;
-       transition: all 0.5s ease-out;
-     }
-     
-     .dyk-btn:hover a{
-       background-color: #ddd;
-       color: black;
-     }
-   } 
 
-   @media (max-width: 414px){
-  .dyk-heading{
-    left: 70px;
-  }
-
-  .p-desc{
-margin-left: -8%;
-  }
-
-  .dyk-desc ol li{
-  left: -250px;
- line-height: 17px;
-  }
-
-  .dyk-btn{
-    display: none;
-  }
-   }
+  
 
    
-   @media(max-width: 360px) {
-     .do-you-know-main{
-       width: 100%;
-       overflow: hidden; 
-     background-position: center;  
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-attachment: scroll;
-     position: relative;
-         }  
-     .dyk-heading{
-       position: absolute;
-       left: 40px;
-       font-size: 0.675rem !important;
-      }
-         
-      .p-desc{
-      position: absolute;
-      font-size: 0.510rem !important;
-      width:100px;
-      left: 25px; 
-      top: 40px;
-     line-height: 10px !important;
-       }
-   
-   .dyk-desc ol li{
-      top: 20px;
-      left: -280px;
-      width: 90px;
-                
-    }   
-   
-   
-     .dyk-btn-main{
-     margin-left: 0px;
-    margin-top: 10px;
-   }
-     .dyk-btn{
-   border-radius: 100%;
-   font-size: 10px;
-   padding: 0px;
-   background-color:transparent;
-   
-   }   
-   
-   .dyk-btn a{
-     color: white !important;
-     background-color:#101046c8 ;
-     padding: 2px 2px;
-     border-radius: 5px;
-     transition: .4s ease-in; 
-   }
-   
-   .dyk-btn a:hover{
-     background-color: transparent !important;
-     border: 1px solid #101046c8 !important;
-     color: #101046c8 !important;
-   }
-   }
+
