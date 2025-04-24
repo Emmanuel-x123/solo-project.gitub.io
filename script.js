@@ -82,3 +82,42 @@ tabs.forEach((tab)=>{
         }
     });
 });
+
+
+
+// Initialize Swiper
+document.addEventListener('DOMContentLoaded', function() {
+  const swiper = new Swiper('.mySwiperservices', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 3,
+      },
+      1200: {
+        slidesPerView: 4,
+      }
+    }
+  });
+  
+  // Add animation on slide change
+  swiper.on('slideChange', function() {
+    const activeSlides = document.querySelectorAll('.swiper-slide-active .service-box, .swiper-slide-next .service-box, .swiper-slide-prev .service-box');
+    activeSlides.forEach(box => {
+      box.style.opacity = '0';
+      box.style.transform = 'translateY(20px)';
+      setTimeout(() => {
+        box.style.opacity = '1';
+        box.style.transform = 'translateY(0)';
+        box.style.transition = 'all 0.5s ease';
+      }, 50);
+    });
+  });
+});
