@@ -49,3 +49,36 @@ tabs.forEach((tab)=>{
   }
 
 
+  document.addEventListener('DOMContentLoaded', function() {
+    const readMoreBtn = document.getElementById('readMoreBtn');
+    const modalOverlay = document.getElementById('modalOverlay');
+    const modalClose = document.getElementById('modalClose');
+    
+    // Open modal
+    readMoreBtn.addEventListener('click', function() {
+        modalOverlay.classList.add('active');
+        document.body.style.overflow = 'hidden'; // Prevent scrolling
+    });
+    
+    // Close modal
+    modalClose.addEventListener('click', function() {
+        modalOverlay.classList.remove('active');
+        document.body.style.overflow = ''; // Re-enable scrolling
+    });
+    
+    // Close when clicking outside modal
+    modalOverlay.addEventListener('click', function(e) {
+        if (e.target === modalOverlay) {
+            modalOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
+    
+    // Close with Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modalOverlay.classList.contains('active')) {
+            modalOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
+});
